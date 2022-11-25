@@ -26,3 +26,21 @@ def update():
     print(p.x, p.y, p.angle)
 
 pgzrun.go()
+def p_move():
+    '''function to move player'''
+    if keyboard.left:
+        p.x -=3
+        p.angle = 10
+    elif keyboard.right:
+        p.x += 3
+        p.angle = -10
+
+
+    if p.x > WIDTH:
+        p.x = 0
+    if p.x < 0:
+        p.x = WIDTH
+    if p.y > HEIGHT:
+        p.y = 0
+    if p.y < 0:
+        p.y = HEIGHT
