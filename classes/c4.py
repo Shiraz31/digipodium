@@ -14,4 +14,4 @@ class MyActor(Actor):
 
 #actor = MyActor('ironman', (100, 100), speed=5)
 
-print(list(filter(lambda i:not (i.startswith('__') or not (i.startwith('_'))), dir(MyActor)))
+print(list(filter(lambda i : not (i.startswith('__') or not (i.startwith('_')))), dir(MyActor)))
